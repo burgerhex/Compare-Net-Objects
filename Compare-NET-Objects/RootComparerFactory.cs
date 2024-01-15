@@ -35,7 +35,7 @@ namespace KellermanSoftware.CompareNetObjects
 
             _rootComparer.TypeComparers = new List<BaseTypeComparer>();
 
-            _rootComparer.TypeComparers.Add(new StringComparer(_rootComparer));
+            _rootComparer.TypeComparers.Add(new TypeComparers.StringComparer(_rootComparer));
             _rootComparer.TypeComparers.Add(new DateTimeComparer(_rootComparer));
             _rootComparer.TypeComparers.Add(new DecimalComparer(_rootComparer));
             _rootComparer.TypeComparers.Add(new DoubleComparer(_rootComparer));
